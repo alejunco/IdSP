@@ -1,0 +1,929 @@
+2017-11-09 23:33:47.730 -05:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Clients] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Clients'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:5801552d-66dd-4885-9685-246e33cebc85
+Error Number:208,State:1,Class:16
+2017-11-09 23:33:47.806 -05:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Clients'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:5801552d-66dd-4885-9685-246e33cebc85
+Error Number:208,State:1,Class:16
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Clients'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:5801552d-66dd-4885-9685-246e33cebc85
+Error Number:208,State:1,Class:16
+2017-11-09 23:36:56.755 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-09 23:36:56.782 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-09 23:36:56.783 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-09 23:36:56.783 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-09 23:36:56.784 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-09 23:36:56.868 -05:00 [DBG] Starting token cleanup
+2017-11-09 23:37:56.982 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-09 23:37:57.010 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-09 23:37:57.011 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-09 23:37:57.012 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-09 23:37:57.012 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-09 23:37:57.091 -05:00 [DBG] Starting token cleanup
+2017-11-09 23:41:28.782 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-09 23:41:28.810 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-09 23:41:28.810 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-09 23:41:28.811 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-09 23:41:28.812 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-09 23:41:28.895 -05:00 [DBG] Starting token cleanup
+2017-11-09 23:57:03.325 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-09 23:57:03.354 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-09 23:57:03.356 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-09 23:57:03.356 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-09 23:57:03.357 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-09 23:57:03.436 -05:00 [DBG] Starting token cleanup
+2017-11-09 23:59:50.860 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-09 23:59:50.890 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-09 23:59:50.891 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-09 23:59:50.892 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-09 23:59:50.893 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-09 23:59:50.975 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:15:51.937 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:15:51.966 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:15:51.967 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:15:51.968 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:15:51.968 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:15:52.052 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:15:58.918 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Unable to resolve service for type 'IdSP.Core.Services.IEmailSender' while attempting to activate 'IdSP.Core.Controllers.AccountController'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:17:40.771 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:17:40.807 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:17:40.808 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:17:40.809 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:17:40.809 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:17:40.924 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:17:42.070 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 00:17:42.082 -05:00 [ERR] The view 'Login' was not found. Searched locations: ["/Views/Account/Login.cshtml","/Views/Shared/Login.cshtml"]
+2017-11-10 00:17:42.097 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: The view 'Login' was not found. The following locations were searched:
+/Views/Account/Login.cshtml
+/Views/Shared/Login.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:18:16.811 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 00:18:33.571 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 00:30:18.544 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:30:18.573 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:30:18.574 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:30:18.575 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:30:18.575 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:30:18.658 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:30:54.189 -05:00 [INF] User created a new account with password.
+2017-11-10 00:30:54.490 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: No such host is known
+   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at IdSP.Core.Services.EmailSender.SendEmailAsync(String email, String subject, String message) in C:\GitHub\IdSP\src\IdSP.Core\Services\EmailSender.cs:line 39
+   at IdSP.Core.Extensions.EmailSenderExtensions.SendEmailConfirmationAsync(IEmailSender emailSender, String email, String link) in C:\GitHub\IdSP\src\IdSP.Core\Extensions\EmailSenderExtensions.cs:line 15
+   at IdSP.Core.Controllers.AccountController.<Register>d__19.MoveNext() in C:\GitHub\IdSP\src\IdSP.Core\Controllers\AccountController.cs:line 244
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:36:26.357 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:36:26.389 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:36:26.390 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:36:26.391 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:36:26.391 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:36:26.498 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:36:53.082 -05:00 [INF] User created a new account with password.
+2017-11-10 00:36:53.834 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at IdSP.Core.Services.EmailSender.SendEmailAsync(String email, String subject, String message) in C:\GitHub\IdSP\src\IdSP.Core\Services\EmailSender.cs:line 44
+   at IdSP.Core.Extensions.EmailSenderExtensions.SendEmailConfirmationAsync(IEmailSender emailSender, String email, String link) in C:\GitHub\IdSP\src\IdSP.Core\Extensions\EmailSenderExtensions.cs:line 15
+   at IdSP.Core.Controllers.AccountController.<Register>d__19.MoveNext() in C:\GitHub\IdSP\src\IdSP.Core\Controllers\AccountController.cs:line 244
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:37:58.658 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:37:58.688 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:37:58.689 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:37:58.690 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:37:58.690 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:37:58.782 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:38:13.256 -05:00 [INF] User created a new account with password.
+2017-11-10 00:38:13.789 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at IdSP.Core.Services.EmailSender.SendEmailAsync(String email, String subject, String message) in C:\GitHub\IdSP\src\IdSP.Core\Services\EmailSender.cs:line 44
+   at IdSP.Core.Extensions.EmailSenderExtensions.SendEmailConfirmationAsync(IEmailSender emailSender, String email, String link) in C:\GitHub\IdSP\src\IdSP.Core\Extensions\EmailSenderExtensions.cs:line 15
+   at IdSP.Core.Controllers.AccountController.<Register>d__19.MoveNext() in C:\GitHub\IdSP\src\IdSP.Core\Controllers\AccountController.cs:line 244
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:38:43.766 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:38:43.808 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:38:43.809 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:38:43.810 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:38:43.813 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:38:43.930 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:38:59.934 -05:00 [INF] User created a new account with password.
+2017-11-10 00:39:00.466 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at IdSP.Core.Services.EmailSender.SendEmailAsync(String email, String subject, String message) in C:\GitHub\IdSP\src\IdSP.Core\Services\EmailSender.cs:line 51
+   at IdSP.Core.Extensions.EmailSenderExtensions.SendEmailConfirmationAsync(IEmailSender emailSender, String email, String link) in C:\GitHub\IdSP\src\IdSP.Core\Extensions\EmailSenderExtensions.cs:line 15
+   at IdSP.Core.Controllers.AccountController.<Register>d__19.MoveNext() in C:\GitHub\IdSP\src\IdSP.Core\Controllers\AccountController.cs:line 244
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:43:38.937 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:43:38.966 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:43:38.967 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:43:38.968 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:43:38.968 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:43:39.059 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:43:59.209 -05:00 [INF] User created a new account with password.
+2017-11-10 00:43:59.705 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at IdSP.Core.Services.EmailSender.SendEmailAsync(String email, String subject, String message) in C:\GitHub\IdSP\src\IdSP.Core\Services\EmailSender.cs:line 51
+   at IdSP.Core.Extensions.EmailSenderExtensions.SendEmailConfirmationAsync(IEmailSender emailSender, String email, String link) in C:\GitHub\IdSP\src\IdSP.Core\Extensions\EmailSenderExtensions.cs:line 15
+   at IdSP.Core.Controllers.AccountController.<Register>d__19.MoveNext() in C:\GitHub\IdSP\src\IdSP.Core\Controllers\AccountController.cs:line 244
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:47:05.622 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:47:05.654 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:47:05.655 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:47:05.655 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:47:05.656 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:47:05.766 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:47:21.821 -05:00 [INF] User created a new account with password.
+2017-11-10 00:47:23.412 -05:00 [DBG] Augmenting SignInContext
+2017-11-10 00:47:23.426 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2017-11-10 00:47:23.427 -05:00 [INF] User created a new account with password.
+2017-11-10 00:47:23.438 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:47:23.439 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:47:23.608 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:47:23.609 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:47:23.769 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:47:23.770 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:08.661 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:48:08.689 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:48:08.690 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:48:08.690 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:48:08.691 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:48:08.779 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:48:22.002 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:22.019 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:22.260 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2017-11-10 00:48:22.285 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 00:48:22.285 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2017-11-10 00:48:22.286 -05:00 [INF] User logged out.
+2017-11-10 00:48:31.345 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 00:48:44.771 -05:00 [INF] User created a new account with password.
+2017-11-10 00:48:46.273 -05:00 [DBG] Augmenting SignInContext
+2017-11-10 00:48:46.282 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2017-11-10 00:48:46.283 -05:00 [INF] User created a new account with password.
+2017-11-10 00:48:46.289 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:46.290 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:46.338 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:46.339 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:46.478 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:46.479 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:58.715 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:58.716 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:59.404 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:59.405 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:59.733 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:48:59.735 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:49:28.383 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:49:28.384 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:57:58.066 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:57:58.096 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:57:58.097 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:57:58.097 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:57:58.098 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:57:58.198 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:58:44.291 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:58:44.324 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:58:44.325 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:58:44.325 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:58:44.326 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:58:44.426 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:58:45.708 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:45.722 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:49.193 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:49.197 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:53.489 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:53.490 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:56.337 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:56.338 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:56.550 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:58:56.551 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:02.585 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:02.588 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:03.113 -05:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\_ViewImports.cshtml(2,12): error CS0234: The type or namespace name 'Models' does not exist in the namespace 'Host' (are you missing an assembly reference?)
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\_ViewImports.cshtml(3,12): error CS0234: The type or namespace name 'Models' does not exist in the namespace 'Host' (are you missing an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:59:52.242 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 00:59:52.294 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 00:59:52.296 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 00:59:52.298 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 00:59:52.300 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 00:59:52.415 -05:00 [DBG] Starting token cleanup
+2017-11-10 00:59:52.729 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:52.743 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:54.511 -05:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\Index.cshtml(4,28): error CS0103: The name 'ManageNavPages' does not exist in the current context
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\Index.cshtml(4,14): error CS1061: 'ViewDataDictionary<IndexViewModel>' does not contain a definition for 'AddActivePage' and no extension method 'AddActivePage' accepting a first argument of type 'ViewDataDictionary<IndexViewModel>' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 00:59:56.777 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:56.785 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 00:59:56.803 -05:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\Index.cshtml(4,28): error CS0103: The name 'ManageNavPages' does not exist in the current context
+C:\GitHub\IdSP\src\IdSP.Core\Views\Manage\Index.cshtml(4,14): error CS1061: 'ViewDataDictionary<IndexViewModel>' does not contain a definition for 'AddActivePage' and no extension method 'AddActivePage' accepting a first argument of type 'ViewDataDictionary<IndexViewModel>' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-11-10 01:00:43.617 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 01:00:43.655 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 01:00:43.656 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 01:00:43.656 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 01:00:43.657 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 01:00:43.759 -05:00 [DBG] Starting token cleanup
+2017-11-10 01:00:43.989 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:44.003 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:47.247 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:47.277 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:47.478 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:47.480 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.278 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.279 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.458 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.460 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.500 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:51.501 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.621 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.622 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.948 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.949 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.990 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:52.990 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.399 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.400 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.563 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.570 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.663 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:53.663 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.194 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.196 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.226 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.230 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.334 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.339 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.771 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.772 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.801 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.804 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.929 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:54.930 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.381 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.382 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.405 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.406 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.520 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:00:55.521 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:04.848 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:04.849 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:04.882 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:04.888 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.042 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.043 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.557 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.558 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.591 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.601 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.693 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:05.696 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.368 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.369 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.403 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.413 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.509 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:06.513 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.062 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.065 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.094 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.101 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.195 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:10.197 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.000 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.002 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.039 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.044 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.161 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:12.163 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:13.958 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:13.960 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:13.988 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:13.992 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:14.035 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:14.038 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.185 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.188 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.212 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.220 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.316 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:15.318 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:16.188 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:16.191 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:16.238 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 01:01:16.245 -05:00 [INF] AuthenticationScheme: Facebook was challenged.
+2017-11-10 01:01:49.035 -05:00 [INF] AuthenticationScheme: Identity.External signed in.
+2017-11-10 01:01:49.043 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.046 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.058 -05:00 [INF] AuthenticationScheme: Identity.External was successfully authenticated.
+2017-11-10 01:01:49.229 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2017-11-10 01:01:49.340 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.342 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.413 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.419 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.541 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:01:49.544 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:03:31.744 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-11-10 01:03:31.790 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-11-10 01:03:31.791 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-11-10 01:03:31.791 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-11-10 01:03:31.792 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-11-10 01:03:31.915 -05:00 [DBG] Starting token cleanup
+2017-11-10 01:04:17.244 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:04:17.258 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:04:20.683 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:04:20.698 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:04:20.893 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2017-11-10 01:04:20.894 -05:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
