@@ -34,6 +34,24 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (@User.Identity.IsAuthenticated)
+                    {
+                        <li role="presentation"><a href="http://localhost:5000/Manage/Index">@User.Identity.Name</a></li>
+                        <li role="presentation" class="active">
+                            <form method="post" asp-controller="Account" asp-action="SignOut">
+                                <button type="submit" class="btn btn-danger" style="margin-top: 8px;">Sign Out</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li role="presentation" class="active">
+                            <a asp-controller="Account" asp-action="SignIn" class="btn btn-primary">Sign In</a>
+                        </li>
+                    }
+
+                </ul>
             </div>
         </div>
     </nav>

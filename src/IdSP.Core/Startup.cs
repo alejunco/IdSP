@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Reflection;
-using IdentityServer4.EntityFramework.DbContexts;
+﻿using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using IdSP.Core.Config;
 using IdSP.Core.Data;
@@ -11,6 +9,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Linq;
+using System.Reflection;
 
 namespace IdSP.Core
 {
@@ -38,8 +38,12 @@ namespace IdSP.Core
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddIdentityServer()
+            services.AddIdentityServer(options =>
+                {
+                    //                    options.UserInteraction.LogoutIdParameter = "local";
+                })
                 .AddDeveloperSigningCredential()
+
                 .AddAspNetIdentity<ApplicationUser>()
                 // this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
@@ -50,14 +54,19 @@ namespace IdSP.Core
                             sql => sql.MigrationsAssembly(migrationsAssembly));
                     };
                 })
+
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
                     options.ConfigureDbContext = builder =>
+                    {
+                        builder.EnableSensitiveDataLogging();
+
                         builder.UseSqlServer(connectionString,
                             sql => sql.MigrationsAssembly(migrationsAssembly));
-
+                    };
                     // this enables automatic token cleanup. this is optional.
+
                     options.EnableTokenCleanup = true;
                     options.TokenCleanupInterval = 3600; // interval in seconds
                 });

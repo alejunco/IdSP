@@ -18,7 +18,7 @@ namespace IdSP.Core.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]
-    public class AccountController:Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -59,7 +59,7 @@ namespace IdSP.Core.Controllers
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ViewData["ReturnUrl"] = returnUrl;
-            return View();
+            return View("Login2");
         }
 
         [HttpPost]
@@ -233,7 +233,7 @@ namespace IdSP.Core.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, PhoneNumber = model.Phone};
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, PhoneNumber = model.Phone };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -295,10 +295,6 @@ namespace IdSP.Core.Controllers
                 // hack: try/catch to handle social providers that throw
                 return SignOut(new AuthenticationProperties { RedirectUri = url }, vm.ExternalAuthenticationScheme);
             }
-
-            if (vm.AutomaticRedirectAfterSignOut && vm.PostLogoutRedirectUri == null)
-                vm.PostLogoutRedirectUri = "/";
-            //                return RedirectToAction("Index", "Home");
 
             return View("LoggedOut", vm);
         }

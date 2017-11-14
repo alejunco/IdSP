@@ -1,4 +1,6 @@
-﻿using IdSP.Core.Data;
+﻿using IdentityServer4.Services;
+using IdentityServer4.Stores;
+using IdSP.Core.Data;
 using IdSP.Core.Extensions;
 using IdSP.Core.Models;
 using IdSP.Core.Services;
@@ -8,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -24,21 +27,30 @@ namespace IdSP.Core.Controllers
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
         private readonly UrlEncoder _urlEncoder;
+        private readonly IIdentityServerInteractionService _interaction;
+        private readonly IClientStore _clients;
+        private readonly IResourceStore _resources;
 
         private const string AuthenicatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
 
         public ManageController(
-          UserManager<ApplicationUser> userManager,
-          SignInManager<ApplicationUser> signInManager,
-          IEmailSender emailSender,
-          ILogger<ManageController> logger,
-          UrlEncoder urlEncoder)
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            IEmailSender emailSender,
+            ILogger<ManageController> logger,
+            UrlEncoder urlEncoder,
+            IIdentityServerInteractionService interaction,
+            IClientStore clients,
+            IResourceStore resources)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = logger;
             _urlEncoder = urlEncoder;
+            _interaction = interaction;
+            _clients = clients;
+            _resources = resources;
         }
 
         [TempData]
@@ -461,6 +473,55 @@ namespace IdSP.Core.Controllers
             _logger.LogInformation("User with ID {UserId} has generated new 2FA recovery codes.", user.Id);
 
             return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Grants()
+        {
+            return View(await BuildViewModelAsync());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Revoke(string clientId)
+        {
+            await _interaction.RevokeUserConsentAsync(clientId);
+            return RedirectToAction("Grants");
+        }
+
+        private async Task<GrantsViewModel> BuildViewModelAsync()
+        {
+            var grants = await _interaction.GetAllUserConsentsAsync();
+
+            var list = new List<GrantViewModel>();
+            foreach (var grant in grants)
+            {
+                var client = await _clients.FindClientByIdAsync(grant.ClientId);
+                if (client != null)
+                {
+                    var resources = await _resources.FindResourcesByScopeAsync(grant.Scopes);
+
+                    var item = new GrantViewModel()
+                    {
+                        ClientId = client.ClientId,
+                        ClientName = client.ClientName ?? client.ClientId,
+                        ClientLogoUrl = client.LogoUri,
+                        ClientUrl = client.ClientUri,
+                        Created = grant.CreationTime,
+                        Expires = grant.Expiration,
+                        IdentityGrantNames = resources.IdentityResources.Select(x => x.DisplayName ?? x.Name).ToArray(),
+                        ApiGrantNames = resources.ApiResources.Select(x => x.DisplayName ?? x.Name).ToArray()
+                    };
+
+                    list.Add(item);
+                }
+            }
+
+            return new GrantsViewModel
+            {
+                Grants = list,
+                StatusMessage = StatusMessage
+            };
         }
 
         #region Helpers

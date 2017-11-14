@@ -1,0 +1,88 @@
+﻿@model GrantsViewModel
+
+@{
+    ViewData["Title"] = "Apps with access to your account";
+    ViewData.AddActivePage(ManageNavPages.Grants);
+}
+<h4>@ViewData["Title"]</h4>
+@Html.Partial("_StatusMessage", Model.StatusMessage)
+<h5>Below is the list of applications you have given access to and the names of the resources they have access to.</h5>
+<div class="grants">
+
+    @if (Model.Grants.Any() == false)
+    {
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="alert alert-info">
+                    You have not given access to any applications
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        foreach (var grant in Model.Grants)
+        {
+            <div class="row grant">
+                <div class="col-sm-3">
+                    @if (grant.ClientLogoUrl != null)
+                    {
+                        <img src="@grant.ClientLogoUrl">
+                    }
+                </div>
+                <div class="col-sm-7">
+                    <div class="clientname">@grant.ClientName</div>
+                    <div>
+                        <span class="created">Created:</span> @grant.Created.ToString("yyyy-MM-dd")
+                    </div>
+                    @if (grant.Expires.HasValue)
+                    {
+                        <div>
+                            <span class="expires">Expires:</span> @grant.Expires.Value.ToString("yyyy-MM-dd")
+                        </div>
+                    }
+                    <div>
+                        @{
+                            var access = "";
+
+                            var grants = grant.ApiGrantNames.Concat(grant.IdentityGrantNames);
+
+
+                            foreach (var name in grants)
+                            {
+                                if (name == grants.First())
+                                {
+                                    access += "Has access to " + name;
+                                }
+                                else
+                                {
+                                    if (name == grants.Last())
+                                    {
+                                        access += " and " + name;
+                                    }
+                                    else
+                                    {
+                                        access += ", " + name;
+                                    }
+                                }
+                            }
+
+                        }
+                        <div class="granttype">@access</div>
+                    </div>
+
+                </div>
+                <div class="col-sm-2">
+                    <form asp-action="Revoke">
+                        <input type="hidden" name="clientId" value="@grant.ClientId">
+                        <button class="btn btn-danger">Remove Access</button>
+                    </form>
+                </div>
+            </div>
+                                }
+                            }
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

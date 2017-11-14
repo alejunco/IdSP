@@ -1,0 +1,125 @@
+﻿@using System.Linq
+@model LoginViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+@{
+    Layout = "";
+    ViewData["Title"] = "Log in";
+}
+<link href="~/css/login.css" rel="stylesheet" />
+<link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<h1 class="header-w3ls">Communal Login Form</h1>
+<div class="appointment-w3">
+
+    <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+        <h2 class="sub-heading-wthree"> Login Here</h2>
+        <div class="main">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group form-left-w3l">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group form-right-w3ls">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="btnn">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Log in</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group left-side w3l">
+                <div class="checkbox">
+                    <label class="span" asp-for="RememberMe">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(m => m.RememberMe)
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <p>
+                    <a asp-action="ForgotPassword" class="for">Forgot password?</a>
+                </p>
+                <p>
+                    <a asp-action="Register" class="for" asp-route-returnurl="@ViewData["ReturnUrl"]">Register as a new user?</a>
+                </p>
+            </div>
+
+            <br>
+        </div>
+
+        <section>
+            @{
+                var loginProviders = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                if (loginProviders.Count == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                            for details on setting up this ASP.NET application to support logging in via external services.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <div class="header-social wthree">
+                        <div class="line-mid">
+                            <h4>or</h4>
+                        </div>
+                        <form asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                            @foreach (var provider in loginProviders)
+                            {
+                                <ul>
+                                    @switch (provider.Name)
+                                    {
+                                        case "Twitter":
+                                            <li>
+                                                <a class="" name="provider" value="@provider.Name">
+                                                    <span class="fa fa-twitter"></span>
+                                                    Sign in with Twitter
+                                                </a>
+                                            </li>
+                                            break;
+                                        case "Facebook":
+                                            <li>
+                                                <a href="#" type="submit" class="f"><span class="fa fa-facebook" aria-hidden="true"></span>Login with Facebook</a>
+                                            </li>
+                                            break;
+                                        default:
+                                            <li>
+                                                <a href="#" type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.Name</a>
+                                            </li>
+
+                                            break;
+                                    }
+                                </ul>
+                            }
+                        </form>
+                    </div>
+
+                }
+            }
+        </section>
+
+        @*        <div class="header-social wthree">*@
+        @*            <div class="line-mid">*@
+        @*                <h4>or</h4>*@
+        @*            </div>*@
+        @*            <ul>*@
+        @*                <li><a href="#" class="f"><span class="fa fa-facebook" aria-hidden="true"></span>Login with Facebook</a></li>*@
+        @*                <li><a href="#" class="g"><span class="fa fa-google-plus" aria-hidden="true"></span>Login with Google+</a></li>*@
+        @*            </ul>*@
+        @*        </div>*@
+
+
+    </form>
+</div>
