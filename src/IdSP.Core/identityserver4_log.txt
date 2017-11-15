@@ -3,7 +3,7 @@ SELECT CASE
     WHEN EXISTS (
         SELECT 1
         FROM [Clients] AS [c])
-    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)0
 END
 System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Clients'.
    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
