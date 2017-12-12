@@ -31,7 +31,7 @@ namespace IdSP.Core.Controllers
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IEmailSender emailSender,
+            IEmailSender emailSender, IEmailSender pepe,
             ILogger<AccountController> logger,
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,

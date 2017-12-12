@@ -1,1 +1,216 @@
-hi
+hi2017-12-05 18:33:32.764 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:33:32.797 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:33:32.799 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:33:32.800 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:33:32.801 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:33:39.906 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:38:43.209 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:38:43.239 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:38:43.241 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:38:43.241 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:38:43.242 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:38:43.416 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:39:58.750 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:40:28.324 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:40:32.916 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:40:35.589 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:45.705 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:45:45.732 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:45:45.733 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:45:45.734 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:45:45.734 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:45:45.816 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:45:49.919 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:53.536 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:55.164 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:56.061 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:56.604 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:57.035 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:57.404 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:57.741 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:58.109 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:58.465 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:45:58.731 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:21.160 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:47:21.187 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:47:21.189 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:47:21.189 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:47:21.190 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:47:21.266 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:47:23.561 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:23.563 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:31.247 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:31.248 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:32.699 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:32.700 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:33.453 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:33.454 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:33.994 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:33.995 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:34.491 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:34.492 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:50.069 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:47:50.097 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:47:50.098 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:47:50.099 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:47:50.100 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:47:50.182 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:47:52.589 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:54.097 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:47:55.516 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:48:16.112 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:48:16.138 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:48:16.140 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:48:16.141 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:48:16.142 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:48:16.221 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:48:18.313 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:53:21.688 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:53:21.720 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:53:21.721 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:53:21.722 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:53:21.722 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:53:21.816 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:53:22.159 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:53:35.737 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:53:35.767 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:53:35.768 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:53:35.768 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:53:35.769 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:53:35.863 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:53:45.027 -05:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentException: Duplicate type name within an assembly.
+   at System.Reflection.Emit.ModuleBuilder.CheckTypeNameConflict(String strTypeName, Type enclosingType)
+   at System.Reflection.Emit.AssemblyBuilderData.CheckTypeNameConflict(String strTypeName, TypeBuilder enclosingType)
+   at System.Reflection.Emit.TypeBuilder.Init(String fullname, TypeAttributes attr, Type parent, Type[] interfaces, ModuleBuilder module, PackingSize iPackingSize, Int32 iTypeSize, TypeBuilder enclosingType)
+   at System.Reflection.Emit.ModuleBuilder.DefineType(String name, TypeAttributes attr, Type parent, Type[] interfaces)
+   at Microsoft.Extensions.DiagnosticAdapter.Internal.ProxyAssembly.DefineType(String name, TypeAttributes attributes, Type baseType, Type[] interfaces)
+   at Microsoft.Extensions.DiagnosticAdapter.Internal.ProxyTypeEmitter.GenerateProxyTypeFromProperties(Type sourceType, Type targetType, VerificationResult verificationResult)
+   at Microsoft.Extensions.DiagnosticAdapter.Internal.ProxyTypeEmitter.VerifyProxySupport(ProxyBuilderContext context, Tuple`2 key)
+   at Microsoft.Extensions.DiagnosticAdapter.Internal.ProxyTypeEmitter.GetProxyType(ProxyTypeCache cache, Type targetType, Type sourceType)
+   at Microsoft.Extensions.DiagnosticAdapter.Internal.ProxyFactory.CreateProxy[TProxy](Object obj)
+   at Proxy_Method_From_<>f__AnonymousType0`3_To_Void OnBeforeAction(Microsoft.AspNetCore.Http.HttpContext, IRouteData)(Object , Object , IProxyFactory )
+   at Microsoft.Extensions.DiagnosticAdapter.ProxyDiagnosticSourceMethodAdapter.<>c__DisplayClass1_0.<Adapt>b__0(Object listener, Object data)
+   at Microsoft.Extensions.DiagnosticAdapter.DiagnosticSourceAdapter.Write(String diagnosticName, Object parameters)
+   at Microsoft.Extensions.DiagnosticAdapter.DiagnosticSourceAdapter.System.IObserver<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcCoreDiagnosticSourceExtensions.BeforeAction(DiagnosticSource diagnosticSource, ActionDescriptor actionDescriptor, HttpContext httpContext, RouteData routeData)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-12-05 18:53:45.049 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:36.331 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:54:36.368 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:54:36.369 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:54:36.370 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:54:36.370 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:54:36.479 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.142 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:44.455 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:45.446 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.344 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.347 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.350 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.351 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.360 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.350 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.359 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.364 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.364 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.350 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.365 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.368 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.369 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.371 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.372 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.378 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.371 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.379 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.382 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.352 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.383 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.385 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.359 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.387 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.388 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.389 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.390 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.364 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.382 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.376 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.392 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.346 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.350 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.395 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.374 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.400 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.396 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.393 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:54:47.387 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:56:26.943 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:56:26.973 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:56:26.974 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:56:26.975 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:56:26.976 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:56:27.062 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:56:34.389 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 18:59:33.385 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 18:59:33.420 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 18:59:33.421 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 18:59:33.421 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 18:59:33.422 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 18:59:33.510 -05:00 [DBG] Starting token cleanup
+2017-12-05 18:59:37.737 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 19:00:15.495 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 19:00:15.526 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 19:00:15.527 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 19:00:15.528 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 19:00:15.528 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 19:00:15.611 -05:00 [DBG] Starting token cleanup
+2017-12-05 19:00:20.547 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 19:00:45.202 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 19:00:45.234 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 19:00:45.235 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 19:00:45.236 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 19:00:45.236 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 19:00:45.330 -05:00 [DBG] Starting token cleanup
+2017-12-05 19:00:45.659 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 19:01:09.749 -05:00 [DBG] Using Identity.Application as default scheme for authentication
+2017-12-05 19:01:09.779 -05:00 [DBG] Using Identity.External as default scheme for sign-in
+2017-12-05 19:01:09.779 -05:00 [DBG] Using Identity.External as default scheme for sign-out
+2017-12-05 19:01:09.780 -05:00 [DBG] Using Identity.Application as default scheme for challenge
+2017-12-05 19:01:09.780 -05:00 [DBG] Using Identity.Application as default scheme for forbid
+2017-12-05 19:01:09.866 -05:00 [DBG] Starting token cleanup
+2017-12-05 19:01:16.577 -05:00 [DBG] Creating EmailSender Instance
+2017-12-05 20:01:09.966 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2017-12-05 20:01:10.112 -05:00 [INF] Clearing 0 tokens

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
@@ -8,6 +9,10 @@ namespace IdSP.Core.Services
 {
     public class EmailSender : IEmailSender
     {
+        public EmailSender()
+        {
+            Log.Debug("Creating EmailSender Instance");
+        }
         public Task SendEmailAsync(string email, string subject, string message)
         {
             try
